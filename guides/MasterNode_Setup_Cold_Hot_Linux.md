@@ -246,7 +246,6 @@ Enter this wallet configuration data and change accordingly:
 rpcuser=<alphanumeric_rpc_username>
 rpcpassword=<alphanumeric_rpc_password>
 rpcallowip=127.0.0.1
-rpcport=6969
 listen=1
 server=1
 daemon=1
@@ -265,7 +264,6 @@ This is a real example, based on the `genkey` obtained in the Cold(Part 1) walle
 rpcuser=adultchainrpcuser
 rpcpassword=someSUPERsecurePASSWORD3746375620
 rpcallowip=127.0.0.1
-rpcport=6969
 listen=1
 server=1
 daemon=1
