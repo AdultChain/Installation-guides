@@ -27,7 +27,7 @@ After the setup is complete, this wallet doesn't have to run 24/7 and will be th
 #### i.    Download the newest adultchain-qt.zip wallet from https://github.com/AdultChain/AdultChain/releases
 #### ii.   Extract the adultchain-qt.exe from adultchain-qt.zip
 #### iii.  Start the new adultchain-qt.exe
-#### iv.   Click Run if you get this warning:
+#### iv.   Click More Info and then Run Anyway if you get this warning:
 ![Alt text](https://github.com/AdultChain/Documentation/blob/master/images/xxx-windows-openfile.png "Wallet Open File Warning")
 #### v.    If this is the first time you have started the wallet, you will be asked to enter a custom data directory. We recommend you enter the following, this creates the data directory where you extracted the adultchain-qt.exe in part ii. It will be easier to find your wallet and config files if you know where they are:
 ![Alt text](https://github.com/AdultChain/Documentation/blob/master/images/xxx-windows-data-directory-box.png "Wallet Data Directory box")
