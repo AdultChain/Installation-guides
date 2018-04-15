@@ -252,7 +252,7 @@ server=1
 daemon=1
 maxconnections=250
 masternode=1
-externalip=<ip_address_here>:6969
+externalip=<ip_address_here>
 masternodeaddr=<ip_address_here>:6969
 masternodeprivkey=<the_colw_wallet_genkey_value_here>
 ```
@@ -271,7 +271,7 @@ server=1
 daemon=1
 maxconnections=250
 masternode=1
-externalip=45.76.33.125:6969
+externalip=45.76.33.125
 masternodeaddr=45.76.33.125:6969
 masternodeprivkey=3HaYBVUCYjEMeeH1Y4sBGLALQZE1Yc1K64xiqgX37tGBDQL8Xg
 ```
