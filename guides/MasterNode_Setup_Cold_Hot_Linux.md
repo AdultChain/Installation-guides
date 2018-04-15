@@ -207,6 +207,7 @@ ps aux | grep adultchaind | grep -v grep
 
 For **Ubuntu 14.04**
 
+
 ```
 apt-get install libzmq3 libminiupnpc-dev -y
 wget https://github.com/AdultChain/AdultChain/files/1892067/adultchain-1.2.1-x86_64-linux.tar.gz 
@@ -215,6 +216,7 @@ rm adultchain-1.2.1-x86_64-linux.tar.gz
 chmod +x adultchain-cli adultchaind
 mv adultchain-cli adultchaind /usr/local/bin/
 cd ..
+adultchaind
 ```
 
 For **Ubuntu 16.04***
@@ -227,6 +229,7 @@ rm adultchain-1.2.1-x86_64-linux.tar.gz
 chmod +x adultchain-cli adultchaind
 mv adultchain-cli adultchaind /usr/local/bin/
 cd ..
+adultchaind
 ```
 
 You'll get a start error like `Error: To use adultchaind, or the -server option to adultchain-qt, you must set an rpcpassword in the configuration file`. It's expected because we haven't created the config file yet.
