@@ -346,6 +346,6 @@ Stop watching the log by pressing CTRL+C
 As the log entry says, your MasterNode is up and running and the hot wallet that holds the collateral can be closed without impacting the operation of the MasterNode in the network.
 
 Not applicable yet as of writing this guide:
-*You should now be able to see your MasterNode(s) on this web page: [http://adultchain.mn.zone](http://adultchain.mn.zone)*
+*You should now be able to see your MasterNode(s) on this web page: [http://adult.mn.zone](http://adultchain.mn.zone)*
 
 Cheers !
