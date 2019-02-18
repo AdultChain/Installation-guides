@@ -284,9 +284,9 @@ adultchaind
 ```
 
 ### 8. Wait until is synced with the blockchain network:
-Run this command every few mins until the block count stopped increasing fast.
+Run this command until the block count stops increasing fast.
 ```
-adultchain-cli getinfo
+watch -n 2 adultchain-cli getinfo
 ``` 
 Give it 30 mins now for this node to "get social" with the other nodes in the network. Once it peers up with a good number of other masternodes, the following activation steps should work fine.
 
