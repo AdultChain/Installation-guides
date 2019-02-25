@@ -210,9 +210,9 @@ For **Ubuntu 14.04**
 
 ```
 apt-get install libzmq3 libminiupnpc-dev -y
-wget https://github.com/AdultChain/AdultChain/files/1892067/adultchain-1.2.1-x86_64-linux.tar.gz 
-tar xvzf adultchain-1.2.1-x86_64-linux.tar.gz
-rm adultchain-1.2.1-x86_64-linux.tar.gz
+wget https://github.com/zoldur/AdultChain/releases/download/v1.2.2.0/adultchain.tar.gz 
+tar xvzf adultchain.tar.gz
+rm adultchain.tar.gz
 chmod +x adultchain-cli adultchaind
 mv adultchain-cli adultchaind /usr/local/bin/
 cd ..
@@ -223,9 +223,9 @@ For **Ubuntu 16.04***
 
 ```
 apt-get install libzmq3-dev libminiupnpc-dev -y
-wget https://github.com/AdultChain/AdultChain/files/1892067/adultchain-1.2.1-x86_64-linux.tar.gz 
-tar xvzf adultchain-1.2.1-x86_64-linux.tar.gz
-rm adultchain-1.2.1-x86_64-linux.tar.gz
+wget https://github.com/zoldur/AdultChain/releases/download/v1.2.2.0/adultchain.tar.gz 
+tar xvzf adultchain.tar.gz
+rm adultchain.tar.gz
 chmod +x adultchain-cli adultchaind
 mv adultchain-cli adultchaind /usr/local/bin/
 cd ..
