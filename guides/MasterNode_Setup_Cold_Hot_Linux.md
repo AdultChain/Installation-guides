@@ -28,13 +28,13 @@ After the setup is complete, this wallet doesn't have to run 24/7 and will be th
 #### ii.   Extract the adultchain-qt.exe from adultchain-qt.zip
 #### iii.  Start the new adultchain-qt.exe
 #### iv.   Click More Info and then Run Anyway if you get this warning:
-![Alt text](https://github.com/AdultChain/Documentation/blob/master/images/xxx-windows-openfile.png "Wallet Open File Warning")
+![Alt text](../images/xxx-windows-openfile.png "Wallet Open File Warning")
 #### v.    If this is the first time you have started the wallet, you will be asked to enter a custom data directory. We recommend you enter the following, this creates the data directory where you extracted the adultchain-qt.exe in part ii. It will be easier to find your wallet and config files if you know where they are:
-![Alt text](https://github.com/AdultChain/Documentation/blob/master/images/xxx-windows-data-directory-box.png "Wallet Data Directory box")
+![Alt text](../images/xxx-windows-data-directory-box.png "Wallet Data Directory box")
 #### vi.   If this is the first time you have started the wallet, you will be asked to Allow Access by the firewall, click Allow access:
-![Alt text](https://github.com/AdultChain/Documentation/blob/master/images/xxx-windows-firewall.png "Wallet Windows Firewall Warning")
+![Alt text](../images/xxx-windows-firewall.png "Wallet Windows Firewall Warning")
 #### vii.  Let the wallet sync until you see this symbol
-![Alt text](https://github.com/AdultChain/Documentation/blob/master/images/xxx-wallet-sync.png "Wallet Sync Completed")
+![Alt text](../images/xxx-wallet-sync.png "Wallet Sync Completed")
 
 #### viii. Encrypt your wallet with a long passphrase and either save it in a password manager such as keepass, or write it down and keep it safe (in a locked compartment or safe) (recommended). This passphrase is your only key to your wallet, do NOT lose it or you will lose all your XXX. Do not let anyone steal your passcode or wallet either, just like in real life!
 To encrypt the wallet, go to Settings > Encrypt wallet. Enter the passphrase, click ok. You will then have to restart the wallet and then go to Settings > Unlock Wallet and then enter the passphrase to unlock the wallet, for staking, controlling the masternode or sending your XXX.
@@ -48,7 +48,7 @@ To encrypt the wallet, go to Settings > Encrypt wallet. Enter the passphrase, cl
    
    Click **New**, type in a label and press **Ok**.
    
-   ![Alt text](https://github.com/AdultChain/Documentation/blob/master/images/xxx_new_address.png "Receiving Address")
+   ![Alt text](../images/xxx_new_address.png "Receiving Address")
 
 ### 3. Select the row of the newly added address and click **Copy** to store the destination address in the clipboard.
 ### 4. Send exactly 20000 XXX coins to the address you just copied. Double check you've got the correct address before transferring the funds.
@@ -60,7 +60,7 @@ To encrypt the wallet, go to Settings > Encrypt wallet. Enter the passphrase, cl
 
 ### 6. Run the following command: `masternode genkey`
 
-   ![Alt text](https://github.com/AdultChain/Documentation/blob/master/images/xxx_console_genkey.png "Wallet Debug Console genkey")
+   ![Alt text](../images/xxx_console_genkey.png "Wallet Debug Console genkey")
 
  You should see a long key that looks like:
    ```
@@ -193,7 +193,7 @@ If you are running the MasterNode server in Amazon AWS or another place where ad
 
 
 
-### 5. Install the Adultchain CLI wallet. Always download the latest [release available](https://github.com/AdultChain/AdultChain/releases), unpack it
+### 5. Install the Adultchain CLI wallet. Always download the latest [release available](/AdultChain/AdultChain/releases), unpack it
 
 If you are already running a `adultchaind` on your server and want to upgrade it, stop the current one with:
 ```
@@ -344,8 +344,8 @@ tail -f /root/.adultchain/debug.log
 Stop watching the log by pressing CTRL+C
 
 As the log entry says, your MasterNode is up and running and the hot wallet that holds the collateral can be closed without impacting the operation of the MasterNode in the network.
-
+<!---
 Not applicable yet as of writing this guide:
 *You should now be able to see your MasterNode(s) on this web page: [http://adultchain.mn.zone](http://adultchain.mn.zone)*
-
+-->
 Cheers !
