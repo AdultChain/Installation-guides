@@ -1,16 +1,14 @@
-# AdultChain Documentation
-
-
+# AdultChain Installation Guides
 
 ## Wallets
 
 ### Install Wallet
-* [XXX Windows Qt Wallet Install Guide](guides/Wallet_Install_Windows.md)
-* [XXX MAC Qt Wallet Install Guide](guides/Wallet_Install_Mac.md)
+* [Windows Qt Wallet Install Guide](guides/Wallet_Install_Windows.md)
+* [MAC Qt Wallet Install Guide](guides/Wallet_Install_Mac.md)
 
 ### Upgrade Wallet
-* [XXX Windows Qt Wallet Upgrade Guide](guides/Wallet_Upgrade_Windows.md)
-* [XXX MAC Qt Wallet Upgrade Guide](guides/Wallet_Upgrade_Mac.md)
+* [Windows Qt Wallet Upgrade Guide](guides/Wallet_Upgrade_Windows.md)
+* [MAC Qt Wallet Upgrade Guide](guides/Wallet_Upgrade_Mac.md)
 
 
 ## Masternodes
