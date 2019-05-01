@@ -39,6 +39,7 @@ Once these are installed, they will be found by configure and a adultchain-qt ex
 
 
 **Hand Compiling Process**
+
 As `root` (preferred) perform the following steps:
 ```
 git clone https://github.com/AdultChain/AdultChain.git 
