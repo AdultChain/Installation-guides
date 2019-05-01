@@ -5,6 +5,7 @@
 ### Install Wallet
 * [Windows Qt Wallet Install Guide](guides/Wallet_Install_Windows.md)
 * [MAC Qt Wallet Install Guide](guides/Wallet_Install_Mac.md)
+* [Linux QT Wallet Install Guide](guides/Wallet_Install_Linux.md)
 
 ### Upgrade Wallet
 * [Windows Qt Wallet Upgrade Guide](guides/Wallet_Upgrade_Windows.md)
