@@ -1,17 +1,20 @@
 This is a HowTo Guide on "hand compiling" the AdultChain ("XXX") wallet code on Ubuntu 16.04LTS.
 
+This should be used in the event that a pre-packaged binary release file of Adultchain's wallet is not working on your Ubuntu 16.04LTS based system.  The actual "hand compiling" portion noted below is done as `root` for a few reasons.  However, if you are not comfortable nor very experienced with Linux on the command line, please consider this course of action very carefully and read these steps thoroughly BEFORE proceeding with actual actions which may have negative consequences.
+
 **Recommendations**
 - The Ubuntu 16.04LTS system is patched and up to date prior to starting this process.
 - The system has a minimum of 4GB of RAM and 2GB of swap space.
 
-**Dependency Build Instructions: Ubuntu & Debian***
+**Dependency Build Instructions: Ubuntu & Debian**
 
 Build requirements:
+As a user with `sudo` privileges, do the following:
 ```
 sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
 sudo apt-get install libboost-all-dev
 ```
-db4.8 packages are available here. You can add the repository using the following command:
+db4.8 packages are available via the Ubuntu Bitcoin PPA. You can add the repository using the following command:
 ```
 sudo add-apt-repository ppa:bitcoin/bitcoin
 sudo apt-get update
@@ -39,6 +42,7 @@ Once these are installed, they will be found by configure and a adultchain-qt ex
 
 
 **Hand Compiling Process**
+--NOTE:-- If you are not experienced with Linux nor comfortable doing things on the Linux command line as the super user `root`, it is suggested you do not do this, but instead use the pre-packaged binaries provided.
 
 As `root` (preferred) perform the following steps:
 ```
