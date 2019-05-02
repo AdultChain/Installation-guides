@@ -42,7 +42,8 @@ Once these are installed, they will be found by configure and a adultchain-qt ex
 
 
 **Hand Compiling Process**
---NOTE:-- If you are not experienced with Linux nor comfortable doing things on the Linux command line as the super user `root`, it is suggested you do not do this, but instead use the pre-packaged binaries provided.
+
+**__NOTE:__** If you are not experienced with Linux nor comfortable doing things on the Linux command line as the super user `root`, it is suggested you do not do this, but instead use the pre-packaged binaries provided.
 
 As `root` (preferred) perform the following steps:
 ```
