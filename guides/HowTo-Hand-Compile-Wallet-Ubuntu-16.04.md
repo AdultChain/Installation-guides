@@ -1,6 +1,8 @@
 This is a HowTo Guide on "hand compiling" the AdultChain ("XXX") wallet code on Ubuntu 16.04LTS.
 
-This should be used in the event that a pre-packaged binary release file of Adultchain's wallet is not working on your Ubuntu 16.04LTS based system.  The actual "hand compiling" portion noted below is done as `root` for a few reasons.  However, if you are not comfortable nor very experienced with Linux on the command line, please consider this course of action very carefully and read these steps thoroughly BEFORE proceeding with actual actions which may have negative consequences.
+***NOTE***
+
+The following information and method should be used in the event that a pre-packaged binary release file of Adultchain's wallet is not working on your Ubuntu 16.04LTS based system.  The actual "hand compiling" portion noted below is done as `root` for a few reasons.  However, if you are not comfortable nor very experienced with Linux on the command line, please consider this course of action very carefully and read these steps thoroughly BEFORE proceeding with actual actions which may have negative consequences.
 
 **Recommendations**
 - The Ubuntu 16.04LTS system is patched and up to date prior to starting this process.
@@ -43,7 +45,9 @@ Once these are installed, they will be found by configure and a adultchain-qt ex
 
 **Hand Compiling Process**
 
-***NOTE:*** If you are not experienced with Linux nor comfortable doing things on the Linux command line as the super user `root`, it is suggested you do not do this, but instead use the pre-packaged binaries provided.
+***NOTE*** 
+
+If you are not experienced with Linux nor comfortable doing things on the Linux command line as the super user `root`, it is suggested you do not do this, but instead use the pre-packaged binaries provided.
 
 As `root` (preferred) perform the following steps:
 ```
