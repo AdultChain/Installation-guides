@@ -1,7 +1,5 @@
 # XXX Cold + Hot wallet MasterNode setup guide
 
-> This is a community contributed guide. Feel free to suggest improvements via Issues or opening Pull Requests. Thank you!
-
 **!!! This guide is for setting up a new MasterNode using the AdultChain wallet
 
 **!!! WARNING: Do not run a Windows masternode at home whether you have a static IP Address or not. Your IP Address can be traced back to your home, therefore it is unsafe. You can still run a cold wallet at home !!!**
@@ -193,7 +191,7 @@ If you are running the MasterNode server in Amazon AWS or another place where ad
 
 
 
-### 5. Install the Adultchain CLI wallet. Always download the latest [release available](/AdultChain/AdultChain/releases), unpack it
+### 5. Install the Adultchain CLI wallet. Always download the latest [release available](https://github.com/AdultChain/AdultChain/releases), unpack it
 
 If you are already running a `adultchaind` on your server and want to upgrade it, stop the current one with:
 ```
