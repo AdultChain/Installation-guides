@@ -1,12 +1,8 @@
-# Adultchain Masternode Install Script
+# Adultchain Masternode Installation using Script
 
-Stable and cheap host here https://m.do.co/c/b93026fab810
+> This guide is meant for setting up a HOT/COLD SETUP WITH WINDOWS AND LINUX. 
 
-XXX address if this helped you and you love me: XDXUX2vo8bmCZHTgJn77SzyFENcYf3r5LW
-
-# This guide is meant for setting up a HOT/COLD SETUP WITH WINDOWS AND LINUX.
-
-Use this script on a fresh install of Ubuntu 14.04 - MUST BE 14.04
+Use this script on a fresh install of Ubuntu 16.04
 
 # Part 1 - Sending Collateral Coins
 
