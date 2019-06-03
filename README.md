@@ -10,7 +10,7 @@
 * [MAC Qt Wallet Upgrade Guide](guides/Wallet_Upgrade_Mac.md)
 
 ### Hand-compiling the AdultChain Wallet 
- * [Instructions for Hand-compiling the AdultChain Wallet](guides/HowTo-Hand-Compile-Wallet-Ubuntu-16.04.md)
+ * [Instructions for Hand-compiling the AdultChain Wallet](guides/Wallet-Compile-HowTo-Ubuntu-16.04.md)
 
 ### Bootstrap / Snapshot usage instructions
  * [For lightning fast blockchain synchronization during wallet installation use this guide](guides/Bootstrap-Usage-Installation-Guide.md)
@@ -18,7 +18,8 @@
 # AdultChain Masternode Installation Guides
 
 ### Install Masternode
- * [MasterNode Hot Qt Wallet + Cold Linux Setup Guide](guides/MasterNode_Setup_Cold_Hot_Linux.md)
+ * [MasterNode Hot Qt Wallet + Cold Linux Setup Guide](guides/MasterNode-Setup-Hot-Cold-Linux.md)
+ * [MasterNode Hot Qt Wallet + Cold Linux Setup Guide using installation script](guides/MasterNode-Setup-Hot-Cold-Linux-With-Script.md)
  * [MasterNode Hot Qt Wallet + Cold Windows Setup Guide](guides/Masternode_Setup_Hot_Windows.md)
 
 ### Upgrade Masternode
