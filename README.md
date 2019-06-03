@@ -28,3 +28,6 @@
 
 
 ----
+## Contact and questions
+If you have read the instructions, but experience problems, join us on our [discord](https://discord.gg/cQ84HeJ) to get help from one of our members.
+
