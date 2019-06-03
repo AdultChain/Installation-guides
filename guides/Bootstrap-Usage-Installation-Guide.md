@@ -44,5 +44,5 @@ adultchaind
 ```
 
 ----
-## Contact and question
+## Contact and questions
 If you have trouble using the bootstrap, join us on our [discord](https://discord.gg/cQ84HeJ) to get help from one of our members.
