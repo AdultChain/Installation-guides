@@ -13,7 +13,7 @@
  * [Instructions for Hand-compiling the AdultChain Wallet](guides/HowTo-Hand-Compile-Wallet-Ubuntu-16.04.md)
 
 ### Bootstrap / Snapshot usage instructions
- * [For lightning fast wallet installation use this guide](guides/Bootstrap-Usage-Installation-Guide.md)
+ * [For lightning fast blockchain synchronization during wallet installation use this guide](guides/Bootstrap-Usage-Installation-Guide.md)
 
 # AdultChain Masternode Installation Guides
 
