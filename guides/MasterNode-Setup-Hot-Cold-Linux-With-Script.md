@@ -50,16 +50,3 @@ sudo bash adultconfig.sh
 2. Right-click your masternode and click "Start alias"
 3. Enjoy!  You can start this process over again for another MN on a fresh Linux VPS!
 
-# Bronate if this helped
-
-*Official XXX Discord: 
-
-*Discord in case you need help from me personally: https://discord.gg/MwE4Fuc
-  - I support multiple coins, please state which you need help with
-
-
-# Recommended Tools
-
-- Putty - Easy to use and customizable SSH client.
-- SuperPutty - This allows you to have multiple Putty tabs open in one window, allowing you to easily organize and switch between masternode servers.
-
