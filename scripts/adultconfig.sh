@@ -2,16 +2,20 @@
 
 echo "*******************************"
 echo "*                             *"
-echo "*      XXX Masternode         *"
-echo "*          SETUP              *"
-echo "*           BY                *"
-echo "*          TPOT               *"
-echo "*                             *"
+echo "*          Adultchain         *"
+echo "*          Masternode         *"
+echo "*            SETUP            *"
 echo "*                             *"
 echo "*******************************"
 echo ""
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "!                                                 !"
+echo "! Make sure you double check before hitting enter !"
+echo "!                                                 !"
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 echo && echo && echo
 
+# Read user informations
 echo "Please enter the IP Address of your server (WITHOUT PORT): "
 read IP
 echo "Please enter the TX ID you got from your Windows Wallet: (Shift+Insert on Putty to paste)"
@@ -22,46 +26,64 @@ echo "Please enter a name for your masternode: "
 read ALIAS
 echo "Please enter your private key: (Shift+Insert on Putty to paste)" 
 read KEY
+sleep 2
+clear
 
-sleep 1
+# Update system and install dependancies
+echo ""
+echo "Updating system and installing dependancies"
+echo ""
+sleep 2
+add-apt-repository ppa:bitcoin/bitcoin -y
+apt-get update -y
+apt-get dist-upgrade -y
+apt-get install ufw unzip libboost-all-dev libevent-dev software-properties-common libminiupnpc-dev -y
+apt-get install libdb4.8-dev libdb4.8++-dev -y
+clear
 
-sudo apt-get update -y
-sudo apt-get upgrade -y
-sudo apt-get install wget nano unrar unzip -y
-sudo apt-get install libboost-all-dev libevent-dev software-properties-common -y
-sudo add-apt-repository ppa:bitcoin/bitcoin -y
-sudo apt-get update
-sudo apt-get install libdb4.8-dev libdb4.8++-dev -y
-  
+# Create 2GB swap file
+echo ""
+echo "Creating swap file"
+echo ""
+sleep 2
 cd /var
-sudo touch swap.img
-sudo chmod 600 swap.img
-sudo dd if=/dev/zero of=/var/swap.img bs=1024k count=2000
-sudo mkswap /var/swap.img
-sudo swapon /var/swap.img
-sudo free
-sudo echo "/var/swap.img none swap sw 0 0" >> /etc/fstab
+touch swap.img
+chmod 600 swap.img
+dd if=/dev/zero of=/var/swap.img bs=1024k count=2048
+mkswap /var/swap.img
+swapon /var/swap.img
+echo "/var/swap.img none swap sw 0 0" >> /etc/fstab
 cd
 
-sudo apt-get install -y ufw
-sudo ufw allow ssh/tcp
-sudo ufw limit ssh/tcp
-sudo ufw allow 6969/tcp
-sudo ufw logging on
-echo "y" | sudo ufw enable
-sudo ufw status
-sleep 1
-sudo mv /$USER/adultmnsetup/adultchaind /$USER
-sudo mv /$USER/adultmnsetup/adultchain-cli /$USER
-sleep 1
-cd /$USER
-sleep 1
-sudo chmod +x /$USER/adultchaind /$USER/adultchain-cli
-sleep 1
-sudo /$USER/adultchaind
-sleep 1
-echo "We are now changing the config file and masternode file"
+# Configure ufw for SSH and daemon
 echo ""
+echo "Configuring firewall"
+echo ""
+sleep 2
+ufw allow ssh/tcp
+ufw limit ssh/tcp
+ufw allow 6969/tcp
+ufw logging on
+echo "y" | ufw enable
+
+# Install daemon and bootstrap
+echo ""
+echo "Installing daemon and bootstrap file"
+echo ""
+sleep 2
+wget https://github.com/zoldur/AdultChain/releases/download/v1.2.2.0/adultchain.tar.gz
+tar xzvf adultchain.tar.gz
+mv adultchaind adultchain-cli /usr/local/bin
+rm adultchain.tar.gz
+mkdir .adultchain && cd .adultchain
+wget https://www.dropbox.com/s/hrc9r8bn8vpo2yn/xxx-blockchain-latest.zip?dl=1
+unzip xxx-blockchain-latest.zip?dl=1
+rm xxx-blockchain-latest.zip?dl=1
+
+# Create config file
+echo ""
+echo "We are now changing the config file"
+sleep 2
 echo "rpcuser=user"`shuf -i 100000-10000000 -n 1` >> /$USER/.adultchain/adultchain.conf
 echo "rpcpassword=pass"`shuf -i 100000-10000000 -n 1` >> /$USER/.adultchain/adultchain.conf
 echo "rpcallowip=127.0.0.1" >> /$USER/.adultchain/adultchain.conf
@@ -75,16 +97,27 @@ echo "externalip=$IP:6969" >> /$USER/.adultchain/adultchain.conf
 echo "masternodeprivkey=$KEY" >> /$USER/.adultchain/adultchain.conf
 echo "" >> /$USER/.adultchain/adultchain.conf
 echo ""
-echo "Config file has been updated, you can see it at nano .adultchain/adultchain.conf"
+
+echo ""
+echo "Config file has been updated, you can see it with to following command: nano .adultchain/adultchain.conf"
+echo ""
 sleep 2
+echo "Starting the daemon"
 echo ""
-echo "Updating the masternode.conf file now"
-sleep 1
-echo "$ALIAS $IP:6969 $KEY $TX $INDEX" >> /$USER/.adultchain/masternode.conf
-sleep 1
-echo "Starting the daemon again as a masternode"
-sudo /$USER/adultchaind
-sleep 1
+adultchaind
 echo ""
-cd /$USER
-echo "Please wait for the node to sync with the network"
+echo "Daemon started"
+sleep 2
+
+cd
+echo ""
+echo "You need to put the following line line in your masternode.conf on your cold wallet"
+echo "$ALIAS $IP:6969 $KEY $TX $INDEX"
+echo ""
+echo ""
+echo "Please wait for the node to sync with the network before you start it from your cold wallet"
+echo ""
+echo ""
+echo "Installation completed"
+echo ""
+sleep 2
