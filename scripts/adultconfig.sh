@@ -71,7 +71,7 @@ echo ""
 echo "Installing daemon and bootstrap file"
 echo ""
 sleep 2
-wget https://github.com/zoldur/AdultChain/releases/download/v1.2.2.0/adultchain.tar.gz
+wget https://github.com/AdultChain/AdultChain/releases/download/v1.2.2.0/adultchain.tar.gz
 tar xzvf adultchain.tar.gz
 mv adultchaind adultchain-cli /usr/local/bin
 rm adultchain.tar.gz
